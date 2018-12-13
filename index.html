@@ -11,10 +11,13 @@
     </script>
 </head>
 <body>
-<div>
-<button type="button" id="start" class="btn btn-primary" onclick="startArt()">Start</button>
-<button type="button" id="stop" class="btn btn-danger" onclick="stopArt()">Stop</button>
-    <span id="output"></span>
+<div class="form" id="mic">
+    <h3>Voice Assistant Test</h3>
+<button type="button" id="start" class="btn btn-success" style="font-size:24px;" onclick="startArt()">Start Voice Engine</button>
+<button type="button" id="stop" class="btn btn-danger" style="font-size:24px;" onclick="stopArt()">Stop Voice Engine</button>
+    <br>
+
+    <span id="output">Speech Output</span>
 </div>
 <script>
     artyom.addCommands([
@@ -78,7 +81,7 @@
      {
        indexes:["I don't know"],
         action:function(){
-            artyom.say("Because it would then be crypto-night");
+            artyom.say("Because it would then be cryptonite");
         }
      },
      {
@@ -114,5 +117,26 @@
       console.log("Stopped");
     }
 </script>
+ <style>
+    .form {
+      text-align: center;
+      padding: 300px;
+    }
+
+    body {
+      color: #DAD6D6;
+      background: #171A21;
+
+    }
+
+    span {
+      display: block;
+      font-size: 40px;
+      letter-spacing: 2px;
+      text-align: center;
+      font-style: italic;
+      padding: 100px;
+    }
+ </style>
 </body>
 </html>
