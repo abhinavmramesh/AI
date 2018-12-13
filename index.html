@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Title</title>
+    <script type="text/javascript" src="./artyom.window.min.js"></script>
+    <script>
+         // Create a global accesible instance of artyom
+         window.artyom = new Artyom();
+    </script>
+</head>
+<body>
+<div>
+<button type="button" id="start" class="btn btn-primary" onclick="startArt()">Start</button>
+<button type="button" id="stop" class="btn btn-danger" onclick="stopArt()">Stop</button>
+    <span id="output"></span>
+</div>
+<script>
+    artyom.addCommands([
+     {
+        description:"Metalloid talks!",
+        indexes:["hello","hey","hi"],
+        action:function(i){
+          if(i==0 || i==2){
+            artyom.say("Hello, what can I do for you?");
+
+          }
+        }
+     },
+     {
+       indexes:["goodbye"],
+       action:function(){
+         alert("Dismantling!! Bu-bye! ");
+       }
+     },
+    ]);
+
+    artyom.redirectRecognizedTextOutput(function(text,isFinal){
+      var span = document.getElementById('output');
+
+      if(isFinal){
+        span.innerHTML='';
+      }else {
+        span.innerHTML=text;
+      }
+
+    });
+
+    function startArt(){
+      artyom.initialize({
+        lang:"en-US",
+        continuous:true,
+        debug:true,
+        listen:true,
+      });
+      console.log("Initialized");
+    }
+    function stopArt(){
+      artyom.fatality();
+      console.log("Stopped");
+    }
+</script>
+</body>
+</html>
