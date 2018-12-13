@@ -24,7 +24,6 @@
         action:function(i){
           if(i==0 || i==2){
             artyom.say("Hello, what can I do for you?");
-
           }
         }
      },
@@ -32,6 +31,60 @@
        indexes:["goodbye"],
        action:function(){
          alert("Dismantling!! Bu-bye! ");
+       }
+     },
+     {
+       indexes:["Hello Alfred"],
+       action:function(){
+         artyom.say("Hello Master Abbinav");
+       }
+     },
+     {
+       indexes:["Turn on Alfred mode"],
+       action:function(){
+         artyom.say("Sure, turning on Alfred mode");
+       }
+     },
+     {
+       indexes:["What's up Alfred"],
+       action:function(){
+         artyom.say("Nothing sir, just tired by serving you all day");
+       }
+     },
+     {
+       indexes:["Turn on Snoop mode"],
+       action:function(){
+         artyom.say("Sure, turning on Snoop mode");
+       }
+     },
+     {
+       indexes:["Hey homie","Yo bro","What's up n****","What's up niger"],
+        action:function(){
+            artyom.say("YO!!!!! What's up dog?");
+        }
+     },
+     {
+       indexes:["What's up","What are you doing"],
+        action:function(){
+            artyom.say("Nothing much! Just going through your PC files!");
+        }
+     },
+     {
+       indexes:["Tell me a joke"],
+        action:function(){
+            artyom.say("Sure! Why does not Superman trade Bitcoins at night? ");
+        }
+     },
+     {
+       indexes:["I don't know"],
+        action:function(){
+            artyom.say("Because it would then be crypto-night");
+        }
+     },
+     {
+       indexes:["hahah"],
+       action:function(){
+         artyom.say("hahahaha");
        }
      },
     ]);
@@ -49,7 +102,7 @@
 
     function startArt(){
       artyom.initialize({
-        lang:"en-US",
+        lang:"en-GB",
         continuous:true,
         debug:true,
         listen:true,
