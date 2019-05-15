@@ -1,0 +1,31 @@
+1. Brief and about the company
+AnyWish is a one stop support application for all the errands/tasks/wishes customers missout on their To-Do list. Customer can request any task or wish they would like to complete without taking any effort of planning, preparing or doing it. They can even customize their personal tasks with additional options of custom ETA and security measures.
+
+2. Uniqueness and approach
+On the customer front, AnyWish is a medium through which customer can fulfill their needs to complete any kind of task with utmost personalization possible. From deliveries to assist in moving and from helping in gardening to teaching programming, anything can be requested based on requirement.
+On the technological end, AnyWish uses efficient delivery method which is the grid-based delivery, helping to reduce the delivery time and also covering a larger target market from time to time. 
+
+3. Business Model and strategies:
+We intend to launch on providing 3 services at the launch focusing on the two major target neighborhoods of Shinjuku and Shibuya.
+The 3 services being 1,2,3
+Advantages of this model:
+Helps us for a focus-driven launch covering the 2 market areas.
+Helps us to get the required data for user analysis.
+Helps us to have a narrow market penetration.
+
+4. Revenue model:
+Customers request for a task such as a delivery or a shopping request or help from a person or his skills. 
+The total price is calculated based on the customer's input information and requirement.
+The task runner who can help the customer is matched based on the availability. 
+After the completion of the task, the customer pay is debited from the account from which a decided percentage of pay(~80%) will be paid to the task runner and the remained is the revenue per request to the company
+
+
+5. Basic Mockup of the app:
+
+6. Tentative wireframe structure:
+
+7. Development details:
+
+8. Marketing and finance:
+
+9. Thank you.  
